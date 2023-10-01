@@ -8,7 +8,7 @@ based on the recent information $`(\boldsymbol{z}_{i},t_i)`$ and $`(\boldsymbol{
 ```math
 \boldsymbol{z}_{i-1} = \boldsymbol{z}_{i+1} \underbrace{- \textcolor{blue}{\gamma} (\boldsymbol{z}_{i+1}-\boldsymbol{z}_{i}) - (1-\textcolor{blue}{\gamma})\Delta(t_i\rightarrow t_{i+1}|\boldsymbol{z}_i)}_{\approx \int_{t_{i+1}}^{t_{i}}\boldsymbol{d}(\boldsymbol{z},t)dt } + \underbrace{\Delta(t_i\rightarrow t_{i+1}|\boldsymbol{z}_i)}_{ \approx \int_{t_i}^{t_{i-1}}\boldsymbol{d}(\boldsymbol{z},t)dt } 
 ```
-where $\gamma=[0,1]$ averages the backward and forward integration approximations for the time-slot $`[t_{i+1},t_i]`$. Once nice property of the above update expression is that it is invertiable. That is, $\boldsymbol{z}_{i+1}$ can be represented as an expression of $`\boldsymbol{z}_{i-1}`$ and $`\boldsymbol{z}_{i+1}`$, thus enabling exact diffusion inversion. 
+where $\gamma=[0,1]$ averages the backward and forward integration approximations for the time-slot $`[t_{i+1},t_i]`$. One nice property of the above update expression is that it is invertiable. That is, $\boldsymbol{z}_{i+1}$ can be represented as an expression of $`\boldsymbol{z}_{i-1}`$ and $`\boldsymbol{z}_{i}`$, which enables exact diffusion inversion. 
 
 The BDIA technique can be applied directly to DDIM. In this case, the forward integration approximation $`\Delta(t_i\rightarrow t_{i-1}|\boldsymbol{z}_i)`$ becomes the DDIM updates, which is given by 
 ```math
