@@ -8,3 +8,4 @@ based on the recent information $`(\boldsymbol{z}_{i},t_i)`$ and $`(\boldsymbol{
 ```math
 \boldsymbol{z}_{i-1} = \boldsymbol{z}_{i+1} \underbrace{- \gamma (\boldsymbol{z}_{i+1}-\boldsymbol{z}_{i}) - (1-\gamma)\Delta(t_i\rightarrow t_{i+1}|\boldsymbol{z}_i)}_{\approx \int_{t_{i+1}}^{t_{i}}\boldsymbol{d}(\boldsymbol{z},t)dt } + \underbrace{\Delta(t_i\rightarrow t_{i+1}|\boldsymbol{z}_i)}_{ \approx \int_{t_i}^{t_{i-1}}\boldsymbol{d}(\boldsymbol{z},t)dt } 
 ```
+where $\gamma=[0,1]$. Once nice property of the above update expression is that it is invertiable. That is, $\boldsymbol{z}_{i+1}$ can be represented as an expression of $`\boldsymbol{z}_{i-1}`$ and $`\boldsymbol{z}_{i+1}`$. 
