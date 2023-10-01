@@ -12,5 +12,5 @@ where $\gamma=[0,1]$. Once nice property of the above update expression is that 
 
 The BDIA technique can be applied directly to DDIM. In this case, the forward integration approximatio $`\Delta(t_i\rightarrow t_{i-1}|\boldsymbol{z}_i)`$ becomes the DDIM updates, which is given by 
 ```math
-`\Delta(t_i\rightarrow t_{i-1}|\boldsymbol{z}_i)` =    - \boldsymbol{z}_i
+`\Delta(t_i\rightarrow t_{i-1}|\boldsymbol{z}_i)` =  \alpha_{j} \left(\frac{\boldsymbol{z}_{j-1} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{j-1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{j-1}, j-1) }{\alpha_{j-1}}\right)+\hspace{0.5mm}\sigma_{j}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{j-1}, j-1)   - \boldsymbol{z}_i
 ```
