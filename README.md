@@ -1,6 +1,6 @@
 ### An Implementation of the BDIA Technique from [Exact Diffusion Inversion via Bi-directional Integration Approximation](https://arxiv.org/abs/2307.10829) By Guoqiang Zhang, J. P. Lewis, and W. Bastiaan Kleijn
 
-In brief, BDIA can be applied to improve the performance of both diffusion sampling and diffusion inversion. Suppose we would like to estimate the next diffusion state $`\boldsymbol{z}_{i-1}`$ by solving a probability ordinary differential equation (ODE) 
+In brief, BDIA is a time-reversible ODE solver that can be applied to improve the performance of both diffusion sampling and diffusion inversion. Suppose we would like to estimate the next diffusion state $`\boldsymbol{z}_{i-1}`$ by solving a probability ordinary differential equation (ODE) 
 ```math
 d\boldsymbol{z} = \boldsymbol{d}(\boldsymbol{z},t)dt
 ```
