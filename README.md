@@ -24,7 +24,7 @@ One can also apply the BDIA technique to the EDM sampling procedure. The details
 <a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/BDIADDIM_t2i_20pairs.png" width="900" /></a>
 
 -------------------------------------------------------
-#### [Demonstration of images editing by BDIA-DDIM using StableDiffusion V2]
+#### [Demonstration of images editing by BDIA-DDIM using StableDiffusion]
 
 <a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/woman_editing_2nd.png" width="900" /></a>
 
