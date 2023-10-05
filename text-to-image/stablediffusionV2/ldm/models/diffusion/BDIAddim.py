@@ -152,11 +152,8 @@ class BDIADDIMSampler(object):
 
         iterator = tqdm(time_range, desc='DDIM Sampler', total=total_steps)
 
-        #print("I am here ddim")
-        #input()
         self.x_last = None
         self.t_last = None
-        #self.e_last = None
         for i, step in enumerate(iterator):
             index = total_steps - i - 1
             ts = torch.full((b,), step, device=device, dtype=torch.long)
@@ -262,6 +259,7 @@ class BDIADDIMSampler(object):
         if noise_dropout > 0.:
             noise = torch.nn.functional.dropout(noise, p=noise_dropout)
 
+        #additional code added by Guoqiang
         if self.x_last is not None:
             x_prev = (self.x_last-(1-self.gamma)*(self.x_last-x) 
                 -self.gamma*(a_last.sqrt()*pred_x0
@@ -270,7 +268,6 @@ class BDIADDIMSampler(object):
                 )
         else:
             x_prev = a_prev.sqrt() * pred_x0 + dir_xt + noise
-
         self.x_last = x
         self.t_last = self.ddim_timesteps[index]
 
