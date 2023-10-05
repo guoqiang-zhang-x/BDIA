@@ -271,13 +271,7 @@ class BDIADDIMSampler(object):
         else:
             x_prev = a_prev.sqrt() * pred_x0 + dir_xt + noise
 
-        if self.x_last is not None:
-            self.x_last = (self.x_last-0.5*(self.x_last-x) 
-                            -0.5*(a_last.sqrt()*pred_x0
-                                    +(1. - a_last).sqrt() * e_t-x)
-                            )
-        else:
-            self.x_last = x
+        self.x_last = x
         self.t_last = self.ddim_timesteps[index]
 
         return x_prev, pred_x0
