@@ -28,15 +28,5 @@ One can also apply the BDIA technique to the EDM and DPM-Solver++ sampling proce
 
 <a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/woman_editing_2nd.png" width="900" /></a>
 
-#### [Reference]
-
-@misc{Guoqiang2023bdia,
-  title={Exact Diffusion Inversion via Bi-directional Integration Approximation}, 
-  author={Guoqiang Zhang and J. P. Lewis and W. Bastiaan Kleijn},
-  howpublished={https://arxiv.org/abs/2307.10829}
-  year={2023},
-  month = {July},
-}
-
 
 
