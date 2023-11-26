@@ -26,7 +26,7 @@ One can also apply the BDIA technique to the EDM and DPM-Solver++ sampling proce
 -------------------------------------------------------
 #### [Demonstration of controlnet-based image editing by BDIA-DDIM with 10 timesteps]
 
-<a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/controlnet_BDIA.png" width="900" /></a>
+<a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/controlnet_BDIA_pro.png" width="900" /></a>
 
 <a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/controlnet_BDIA_2nd.png" width="900" /></a>
 
