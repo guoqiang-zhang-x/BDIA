@@ -36,7 +36,5 @@ One can also apply the BDIA technique to the EDM and DPM-Solver++ sampling proce
 <a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/woman_editing_2nd.png" width="900" /></a>
 
 
-<a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/image_editing_cat_lion.png" width="900" /></a>
-
 
 
