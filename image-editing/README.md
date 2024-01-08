@@ -1,5 +1,5 @@
 
-### Procedure for running the code
+### Procedure for running the code for round-trip image editing
 1. Download the source code and then put it to a folder in the google driver. 
 2. Upload and run BDIA_experiments.ipynb over google colab
 
