@@ -35,8 +35,13 @@ One can also apply the BDIA technique to the EDM and DPM-Solver++ sampling proce
 
 <a href="URL_REDIRECT" target="blank"><img align="center" src="https://github.com/guoqiang-zhang-x/BDIA/blob/main/image_examples/woman_editing_2nd.png" width="900" /></a>
 
+### News 
 
-# Citation
+Source code for round-trip image-editing has been added on Januray 8th, 2024. The code depends heavily on the code for EDICT.  
+
+
+
+### Citation
 
 If you find our work useful in your research, please cite:
 
