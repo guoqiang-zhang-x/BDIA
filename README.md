@@ -39,6 +39,8 @@ One can also apply the BDIA technique to the EDM and DPM-Solver++ sampling proce
 
 Source code for round-trip image-editing has been added on Januray 8th, 2024. The code depends heavily on the code for EDICT.  
 
+Source code for text-to-image over StableDiffusion V2 has been added in October 2023.   
+
 
 
 ### Citation
