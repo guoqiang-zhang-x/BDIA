@@ -40,7 +40,7 @@ Note: For 10 timesteps, it is preferable to set ```\gamma=0.5``` while for 40 ti
 
 ### News 
 
-Source code for round-trip image-editing has been added on Januray 8th, 2024. The code depends heavily on the code for EDICT.  
+Source code for round-trip image-editing has been added on Januray 8th, 2024. The code depends heavily on the original source code for EDICT.  
 
 Source code for text-to-image over StableDiffusion V2 has been added in October 2023.   
 
