@@ -48,7 +48,7 @@ Source code for text-to-image over StableDiffusion V2 has been added in October 
 If you find our work useful in your research, please cite:
 
 ```
-@MISC{guoqiang2023bida,
+@MISC{guoqiang2023bdia,
   title={Exact Diffusion Inversion via Bi-directional Integration Approximation},
   author={G. Zhang and J. P. Lewis and W. B. Kleijn},
   howpublished={https://arxiv.org/abs/2307.10829},
