@@ -1,9 +1,10 @@
 
 ### Procedure for running the code for round-trip image editing
-1. Download the source code and then put it to a folder in the google driver. 
-2. Upload and run BDIA_experiments.ipynb over google colab
+1. Download the source code and then put it to a folder in the google drive. 
+2. Upload and run BDIA_experiments.ipynb over google colab.
+   
 
 
 ### Acknowledgement
-The implementation for BDIA for the round-trip image editing depends heavly on the open-source of EDICT. 
+The implementation for BDIA for the round-trip image editing depends heavly on the open-source of EDICT. The main python function for realizing BDIA-DDIM for round-trip image editing is BDIA_stablediffusion in bdia_edict_functions.py.   
 
