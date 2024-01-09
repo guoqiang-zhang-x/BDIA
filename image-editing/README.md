@@ -6,5 +6,5 @@
 Note: The parameter $\gamma$ in BDIA has a big impact on the resulting edited images. The recommanded range for $\gamma$ is [1.0, 0.92]. 
 
 ### Acknowledgement
-The implementation for BDIA for the round-trip image editing depends heavly on the open-source of EDICT. The main python function for realizing BDIA-DDIM for round-trip image editing is $\textbf{BDIA}\_$$\textbf{stablediffusion}$ in bdia_edict_functions.py.   
+The implementation for BDIA for the round-trip image editing depends heavly on the open-source of EDICT. The main python function for realizing BDIA-DDIM for round-trip image editing is BDIA_stablediffusion in bdia_edict_functions.py.   
 
