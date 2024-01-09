@@ -1,7 +1,7 @@
 
 ### Procedure for running the code for round-trip image editing
 1. Download the source code and then put it to a folder in the google drive. 
-2. Upload and run BDIA_experiments.ipynb over google colab.
+2. Upload and run BDIA_experiments.ipynb over google colab. (Note: one may need to change the work directory in BDIA_experiments.ipynb for proper running).  
    
 
 
