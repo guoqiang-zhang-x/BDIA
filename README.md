@@ -14,7 +14,13 @@ The BDIA technique can be applied directly to DDIM. In this case, the forward in
 ```math
 \Delta(t_i\rightarrow t_{i-1}|\boldsymbol{z}_i) =  \alpha_{i-1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i-1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i)   - \boldsymbol{z}_i
 ```
-One can then work out the the final update expression of BDIA-DDIM (please check the paper for details).
+Correspondingly, the backward integration approximation $`\Delta(t_i\rightarrow t_{i}|\boldsymbol{z}_{i+1})`$ becomes the DDIM updates, which is given by 
+```math
+\Delta(t_i\rightarrow t_{i}|\boldsymbol{z}_{i+1}) =  \alpha_{i+1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i+1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i)   - \boldsymbol{z}_i
+```
+As a result, the final update expression of BDIA-DDIM is 
+
+
 
 One can also apply the BDIA technique to the EDM and DPM-Solver++ sampling procedures. Experiments on BDIA-EDM show that it outperforms EDM consistently over four pre-trained models in terms of FID scores.  The details can be found out in the paper. 
 
