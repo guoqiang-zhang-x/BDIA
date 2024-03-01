@@ -16,7 +16,7 @@ The BDIA technique can be applied directly to DDIM. In this case, the forward in
 ```
 Correspondingly, the backward integration approximation $`\Delta(t_i\rightarrow t_{i}|\boldsymbol{z}_{i+1})`$ becomes the DDIM updates, which is given by 
 ```math
-\Delta(t_i\rightarrow t_{i}|\boldsymbol{z}_{i+1}) =  \alpha_{i+1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i+1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i)   - \boldsymbol{z}_i
+\Delta(t_i\rightarrow t_{i+1}|\boldsymbol{z}_{i}) =  \alpha_{i+1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i+1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i)   - \boldsymbol{z}_i
 ```
 As a result, the final update expression of BDIA-DDIM is 
 
