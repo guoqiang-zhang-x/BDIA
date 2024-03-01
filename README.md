@@ -19,7 +19,9 @@ Correspondingly, the backward integration approximation $`\Delta(t_i\rightarrow 
 \Delta(t_i\rightarrow t_{i+1}|\boldsymbol{z}_{i}) =  \alpha_{i+1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i+1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i)   - \boldsymbol{z}_i
 ```
 As a result, the final update expression of BDIA-DDIM is 
-
+```math
+\Delta(t_i\rightarrow t_{i+1}|\boldsymbol{z}_{i}) =  \gamma \boldsymbol{z}_{i+1}-\gamma\Big[\alpha_{i+1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i+1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) \Big] + \Delta(t_i\rightarrow t_{i-1}|\boldsymbol{z}_i) =  \alpha_{i-1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i-1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i)
+```
 
 
 One can also apply the BDIA technique to the EDM and DPM-Solver++ sampling procedures. Experiments on BDIA-EDM show that it outperforms EDM consistently over four pre-trained models in terms of FID scores.  The details can be found out in the paper. 
