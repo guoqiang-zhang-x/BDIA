@@ -20,7 +20,7 @@ Correspondingly, the backward integration approximation $`\Delta(t_i\rightarrow 
 ```
 As a result, the final update expression of BDIA-DDIM is 
 ```math
-\boldsymbol{z}_{i-1} =  \gamma \boldsymbol{z}_{i+1}-\gamma\Big[\alpha_{i+1} \underbrace{\Big(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\Big)}_{\hat{\boldsymbol{x}}_0}+\hspace{0.5mm}\sigma_{i+1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) \Big] + \Big[\alpha_{i-1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i-1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) \Big]
+\boldsymbol{z}_{i-1} =  \gamma \boldsymbol{z}_{i+1}-\gamma\Big[\alpha_{i+1} \Big(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\Big)+\hspace{0.5mm}\sigma_{i+1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) \Big] + \Big[\alpha_{i-1} \left(\frac{\boldsymbol{z}_{i} \hspace{-0.3mm}-\hspace{-0.3mm} \sigma_{i}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) }{\alpha_{i}}\right)+\hspace{0.5mm}\sigma_{i-1}\hat{\boldsymbol{\epsilon}}_{\boldsymbol{\theta}}(\boldsymbol{z}_{i}, i) \Big]
 ```
 
 
