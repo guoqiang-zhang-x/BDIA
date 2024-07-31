@@ -63,11 +63,11 @@ Note: For 10 timesteps, it is preferable to set $\gamma=0.5$ while for 40 timest
 If you find our work useful in your research, please cite:
 
 ```
-@MISC{guoqiang2023bdia,
+@MISC{guoqiang2024bdia,
   title={Exact Diffusion Inversion via Bi-directional Integration Approximation},
   author={G. Zhang and J. P. Lewis and W. B. Kleijn},
-  howpublished={https://arxiv.org/abs/2307.10829},
-  year={2023}
+  howpublished={ECCV},
+  year={2024}
 }
 ```
 
