@@ -29,7 +29,7 @@ One can also apply the BDIA technique to the EDM and DPM-Solver++ sampling proce
 -------------------------------------------------------
 #### News 
 
-Recently, the BDIA technique has also been sucessfully applied to design reversiable transformers. See [the paper link](https://arxiv.org/pdf/2407.09093) 
+Recently, the BDIA technique has also been sucessfully applied to design reversiable transformers.
 
 Source code for round-trip image-editing has been added on Januray 8th, 2024. The code depends heavily on the original source code for EDICT.  
 
